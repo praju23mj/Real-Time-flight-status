@@ -1,0 +1,99 @@
+/* FlightDetail.css */
+.flight-detail {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    padding: 30px;
+    max-width: 800px;
+    margin: 40px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .flight-detail h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2rem;
+  }
+  
+  .flight-detail ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  .flight-detail li {
+    margin: 12px 0;
+  }
+  
+  .flight-detail li strong {
+    color: #4CAF50;
+  }
+  
+  .flight-detail a {
+    display: inline-block;
+    margin-top: 20px;
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .flight-detail a:hover {
+    text-decoration: underline;
+  }
+  
+  .flight-detail .back-button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .flight-detail .back-button:hover {
+    background-color: #45a049;
+  }
+
+  .flight-detail {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .flight-detail p {
+    font-size: 16px;
+    margin: 8px 0;
+  }
+  
+  .error {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+    .flight-detail h2 {
+      font-size: 1.8rem;
+    }
+  
+    .flight-detail ul {
+      font-size: 1rem;
+    }
+  
+    .flight-detail li {
+      margin: 8px 0;
+    }
+  
+    .flight-detail .back-button {
+      font-size: 0.9rem;
+      padding: 8px 18px;
+    }
+  }
+  
