@@ -8,7 +8,7 @@ const App: React.FC = () => {
     <Router>
     <Routes>
       <Route path="/" element={<FlightTable />} />
-      <Route path="/flight/:id" element={<FlightDetails />} /> {/* Define route for flight details */}
+      <Route path="/flight/:id" element={<FlightDetails />} />
     </Routes>
   </Router>
   );
