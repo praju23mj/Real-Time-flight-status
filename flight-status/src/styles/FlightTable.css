@@ -1,4 +1,4 @@
-/* FlightTable.css */
+/* 
 .flight-container {
     font-family: 'Arial', sans-serif;
     background-color: #f4f7f6;
@@ -90,5 +90,91 @@
     h2 {
       font-size: 1.5rem;
     }
+  }
+   */
+
+
+   /* FlightTable.css */
+.flight-container {
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+  
+  .flight-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .flight-table thead {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .flight-table th,
+  .flight-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  .flight-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .flight-table tbody tr:hover {
+    background-color: #f1f1f1;
+    transition: 0.3s;
+  }
+  
+  .flight-table td a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .flight-table td a:hover {
+    text-decoration: underline;
+  }
+  
+  .status {
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    display: inline-block;
+    text-transform: uppercase;
+  }
+  
+  .status.on-time {
+    background-color: #28a745; /* Green */
+    color: white;
+  }
+  
+  .status.delayed {
+    background-color: #ffc107; /* Yellow */
+    color: black;
+  }
+  
+  .status.cancelled {
+    background-color: #dc3545; /* Red */
+    color: white;
+  }
+  
+  .status.boarding {
+    background-color: #007bff; /* Blue */
+    color: white;
   }
   

@@ -1,4 +1,4 @@
-/* FlightDetail.css */
+/* 
 .flight-detail {
     font-family: 'Arial', sans-serif;
     background-color: #fff;
@@ -95,5 +95,96 @@
       font-size: 0.9rem;
       padding: 8px 18px;
     }
+  }
+   */
+
+
+   /* FlightDetails.css */
+.flight-detail-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    text-align: left;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .flight-detail-container:hover {
+    transform: scale(1.02);
+  }
+  
+  .flight-detail h2 {
+    text-align: center;
+    color: #007bff;
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .flight-detail {
+    padding: 15px;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .flight-detail p {
+    margin: 10px 0;
+    padding: 10px;
+    background: #f8f9fa;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .flight-detail strong {
+    color: #007bff;
+  }
+  
+  /* Status styles */
+  .status {
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    display: inline-block;
+    text-transform: uppercase;
+  }
+  
+  .status.on-time {
+    background-color: #28a745; /* Green */
+    color: white;
+  }
+  
+  .status.delayed {
+    background-color: #ffc107; /* Yellow */
+    color: black;
+  }
+  
+  .status.cancelled {
+    background-color: #dc3545; /* Red */
+    color: white;
+  }
+  
+  .status.boarding {
+    background-color: #007bff; /* Blue */
+    color: white;
+  }
+  
+  /* Loading & Error */
+  .loading,
+  .error {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  .loading {
+    color: #007bff;
+  }
+  
+  .error {
+    color: #dc3545;
   }
   

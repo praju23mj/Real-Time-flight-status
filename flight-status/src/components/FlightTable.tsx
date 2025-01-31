@@ -70,7 +70,9 @@ const FlightTable: React.FC = () => {
               <td>{flight.origin}</td>
               <td>{flight.destination}</td>
               <td>{flight.departureTime}</td>
-              <td>{flight.status}</td>
+              <td className={`status ${flight.status.toLowerCase().replace(/\s+/g, "-")}`}>
+              {flight.status}
+              </td>
             </tr>
           ))}
         </tbody>

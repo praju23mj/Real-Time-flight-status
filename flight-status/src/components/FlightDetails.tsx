@@ -45,19 +45,30 @@ const FlightDetails: React.FC = () => {
     }
   
     return (
-      <div>
-        <h2>Flight Details</h2>
-        <div className="flight-detail">
-          <p><strong>Flight Number:</strong> {flightDetails.flightNumber}</p>
-          <p><strong>Airline:</strong> {flightDetails.airline}</p>
-          <p><strong>Origin:</strong> {flightDetails.origin}</p>
-          <p><strong>Destination:</strong> {flightDetails.destination}</p>
-          <p><strong>Departure Time:</strong> {flightDetails.departureTime}</p>
-          <p><strong>Status:</strong> {flightDetails.status}</p>
-          {/* Add any other relevant flight details here */}
+        <div className="flight-detail-container">
+          <h2>Flight Details</h2>
+          {error ? (
+            <p className="error">{error}</p>
+          ) : !flightDetails ? (
+            <p className="loading">Loading...</p>
+          ) : (
+            <div className="flight-detail">
+              <p><strong>Flight Number:</strong> {flightDetails.flightNumber}</p>
+              <p><strong>Airline:</strong> {flightDetails.airline}</p>
+              <p><strong>Origin:</strong> {flightDetails.origin}</p>
+              <p><strong>Destination:</strong> {flightDetails.destination}</p>
+              <p><strong>Departure Time:</strong> {flightDetails.departureTime}</p>
+              <p>
+              <strong>Status:</strong> 
+              <span className={`status ${flightDetails.status.toLowerCase()}`}>
+              {flightDetails.status}
+              </span>
+              </p>
+            </div>
+          )}
         </div>
-      </div>
-    );
+      );
+      
   };
   
   export default FlightDetails;
